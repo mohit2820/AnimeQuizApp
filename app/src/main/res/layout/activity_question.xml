@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fef3df"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Top Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#503d2f"
+            android:padding="8dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:id="@+id/text_progress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2 / 10"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#fcf2e1"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/text_quit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QUIT"
+                android:textStyle="bold"
+                android:textColor="#fcf2e1"
+                android:textSize="16sp"
+                android:gravity="end" />
+        </LinearLayout>
+
+        <!-- Question -->
+        <TextView
+            android:id="@+id/text_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What is the name of the massive sword Guts wields in Berserk?"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#503d2f"
+            android:padding="5dp"
+            android:gravity="center" />
+
+        <!-- Image -->
+        <ImageView
+            android:id="@+id/image_question"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="24dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sample" />
+
+        <!-- Options Grid -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/btn_option1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:textColor="@color/white"
+                android:text="Naruto"
+                android:letterSpacing="0.05"/>
+
+            <Button
+                android:id="@+id/btn_option2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"
+                android:text="Bleach"
+                android:letterSpacing="0.05"/>
+
+            <Button
+                android:id="@+id/btn_option3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:fontFamily="@font/buttonfont"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"
+                android:text="One Piece"
+                android:letterSpacing="0.05"/>
+
+            <Button
+                android:id="@+id/btn_option4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_columnWeight="1"
+                android:fontFamily="@font/buttonfont"
+                android:layout_margin="8dp"
+                android:text="Attack on Titan" />
+        </GridLayout>
+
+        <!-- NEXT Button -->
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="NEXT"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fcf2e1"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:backgroundTint="#503d2f"
+            android:fontFamily="@font/buttonfont"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="8dp"
+            android:letterSpacing="0.05"/>
+
+        <!-- Score -->
+        <TextView
+            android:id="@+id/text_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Score: 1"
+            android:fontFamily="@font/buttonfont"
+            android:textColor="#503d2f"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</ScrollView>

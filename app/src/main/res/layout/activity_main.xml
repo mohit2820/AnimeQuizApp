@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmainscreen"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mainscreentitle"
+        android:text="ANIME"
+        android:textSize="80sp"
+        android:textColor="#cac4d0"
+        android:padding="10dp"
+        android:layout_marginTop="20dp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#cac4d0"
+        android:fontFamily="@font/mainscreentitle"
+        android:text="QUIZ"
+        android:textSize="70sp"
+        android:padding="2dp">
+
+    </TextView>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="320dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp"
+                android:onClick="darkFantasy"
+                android:clickable="true"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp"
+                android:layout_marginTop="20dp"
+                android:foreground="?attr/selectableItemBackground">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/darkfantasy"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="DARK FANTASY"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:gravity="bottom|center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:fontFamily="@font/cardfont"/>
+
+                </FrameLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+           <!--  science fiction card view -->
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="320dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp"
+                android:clickable="true"
+                android:onClick="scienceFiction"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp"
+                android:layout_marginTop="20dp"
+                android:foreground="?attr/selectableItemBackground">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/sciencefic"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="SCI-FI"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:gravity="bottom|center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:fontFamily="@font/cardfont"/>
+
+                </FrameLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+<!--            slice of life -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="320dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp"
+                android:onClick="sliceOfLife"
+                android:clickable="true"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp"
+                android:layout_marginTop="20dp"
+                android:foreground="?attr/selectableItemBackground">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/sliceoflife"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="SLICE OF LIFE"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:gravity="bottom|center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:fontFamily="@font/cardfont"/>
+
+                </FrameLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+<!--            adventure-->
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="320dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp"
+                android:onClick="adventure"
+                android:clickable="true"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp"
+                android:layout_marginTop="20dp"
+                android:foreground="?attr/selectableItemBackground">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/adventure"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="ADVENTURE"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:gravity="bottom|center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:fontFamily="@font/cardfont"/>
+
+                </FrameLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+<!--            horror -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="320dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="20dp"
+                android:onClick="horror"
+                app:cardElevation="8dp"
+                android:clickable="true"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp"
+                android:layout_marginTop="20dp"
+                android:foreground="?attr/selectableItemBackground">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/horror"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="HORROR"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:gravity="bottom|center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:fontFamily="@font/cardfont"/>
+
+                </FrameLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+<!--            romance -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="320dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="20dp"
+                android:onClick="Romance"
+                app:cardElevation="8dp"
+                android:clickable="true"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp"
+                android:layout_marginTop="20dp"
+                android:foreground="?attr/selectableItemBackground">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/romance"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="ROMANCE"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:gravity="bottom|center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:fontFamily="@font/cardfont"/>
+
+                </FrameLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+<!--            action-->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="320dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp"
+                android:clickable="true"
+                app:strokeColor="@color/black"
+                android:onClick="Action"
+                app:strokeWidth="2dp"
+                android:layout_marginTop="20dp"
+                android:foreground="?attr/selectableItemBackground">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/action"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="ACTION"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:gravity="bottom|center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:fontFamily="@font/cardfont"/>
+
+                </FrameLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

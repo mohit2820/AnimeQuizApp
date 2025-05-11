@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:padding="24dp">
+
+    <!-- Title: QUIZ -->
+
+    <TextView
+        android:id="@+id/title_anime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/myfont"
+        android:text="ANIME"
+        android:textColor="#f8e3c8"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <TextView
+        android:id="@+id/title_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/myfont"
+        android:text="QUIZ"
+        android:textColor="#f8e3c8"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@+id/title_anime"
+        app:layout_constraintStart_toStartOf="@+id/title_anime"
+        app:layout_constraintTop_toBottomOf="@id/title_anime" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="273dp"
+        android:layout_height="572dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/title_quiz"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/title_quiz"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16000003"
+        app:srcCompat="@drawable/login_girl" />
+
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_input_login_text"
+        android:fontFamily="@font/myfont"
+        android:hint="Name"
+        android:textColor="@color/black"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:textColorHint="#4d2d69"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/title_quiz"
+        app:layout_constraintVertical_bias="0.826" />
+
+
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_input_login_text"
+        android:fontFamily="@font/myfont"
+        android:hint="Email"
+        android:textColor="@color/black"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textColorHint="#4d2d69"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/input_name"
+        app:layout_constraintStart_toStartOf="@+id/input_name"
+        app:layout_constraintTop_toBottomOf="@+id/title_quiz"
+        app:layout_constraintVertical_bias="0.941" />
+
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/custom_input_login_text"
+        android:fontFamily="@font/myfont"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:padding="12dp"
+        android:textColorHint="#4d2d69"
+        app:layout_constraintEnd_toEndOf="@+id/input_email"
+        app:layout_constraintStart_toStartOf="@+id/input_email"
+        app:layout_constraintTop_toBottomOf="@+id/input_email" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_create_account"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/create_account_button"
+        android:fontFamily="@font/buttonfont"
+        android:padding="14dp"
+        android:text="CREATE ACCOUNT"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/input_password"
+        app:layout_constraintStart_toStartOf="@+id/input_password"
+        app:layout_constraintTop_toBottomOf="@+id/input_password"
+        android:letterSpacing="0.05"/>
+
+    <!--     loading ghost animation -->
+    <app.rive.runtime.kotlin.RiveAnimationView
+        android:id="@+id/loading"
+        android:layout_width="177dp"
+        android:layout_height="177dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="212dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/input_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_quiz"
+        app:layout_constraintVertical_bias="0.239"
+        app:riveResource="@raw/loadingghost" />
+
+    <ImageView
+        android:id="@+id/logingriffith"
+        android:layout_width="89dp"
+        android:layout_height="94dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintBottom_toTopOf="@+id/input_name"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/title_anime"
+        app:layout_constraintVertical_bias="0.219"
+        app:srcCompat="@drawable/logingrifith" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="7dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

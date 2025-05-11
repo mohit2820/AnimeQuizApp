@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "633055350288",
+    "project_id": "chibichatter-5e3e6",
+    "storage_bucket": "chibichatter-5e3e6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633055350288:android:2a403f1e90ee908d9f4495",
+        "android_client_info": {
+          "package_name": "com.example.chibichatter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcv07cBf68rHh8awKcz7up7N5-4ICiIJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

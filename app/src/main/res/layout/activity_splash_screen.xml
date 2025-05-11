@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splash_Screen">
+
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg2"
+        android:scaleType="centerCrop">
+    </ImageView>
+
+
+    <app.rive.runtime.kotlin.RiveAnimationView
+        android:id="@+id/riveAnimation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:riveResource="@raw/fire" />
+
+    <ImageView
+        android:id="@+id/characterImage"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/guts"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true">
+
+    </ImageView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUIZ APP"
+        android:textColor="#F2E9E4"
+        android:textSize="80sp"
+        android:fontFamily="@font/myfont"
+        android:layout_below="@id/characterImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+
+
+
+</RelativeLayout>
